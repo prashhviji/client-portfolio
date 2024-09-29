@@ -1,0 +1,38 @@
+.mywork-title{
+    text-align: center;
+    margin-top: 2rem;
+}
+
+.mywork-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 40px;
+    margin: 20px 0px;
+    overflow-x: auto; /* Allow horizontal scrolling */
+    scroll-behavior: smooth; /* Optional for smooth scrolling */
+    white-space: nowrap; /* Ensure that content stays in a single line */
+    padding-bottom: 10px;
+}
+
+.mywork-container::-webkit-scrollbar{
+    display: none;
+}
+
+
+
+/* Image styling */
+.mywork-container img{
+    box-sizing: border-box;
+    width: 350px; /* Ensure images are narrow enough to allow multiple in view */
+    height: 400px;
+    transition: transform 0.3s ease-in-out;
+    cursor: pointer;
+}
+
+.mywork-container img:hover{
+    transform: scale(1.08);
+
+    border-radius: 10px;
+}
